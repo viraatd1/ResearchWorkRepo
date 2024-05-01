@@ -1,0 +1,3 @@
+# Ignore the generated Files
+*/ComChannels/socketTest/server.o
+*/ComChannels/socketTest/client.o
