@@ -10,6 +10,7 @@
 #include <sys/types.h>
 #include <fcntl.h>
 #include <sys/stat.h>
+
 #include <mqueue.h>
 
 #define SERVER_QUEUE_NAME   "/sp-example-server"
