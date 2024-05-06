@@ -39,10 +39,18 @@ int main (int argc, char **argv)
         perror ("Client: mq_open (client)");
         exit (1);
     }
+    else
+    {
+       printf ("cannot open client ");
+    }
 
     if ((qd_server = mq_open (SERVER_QUEUE_NAME, O_WRONLY)) == -1) {
         perror ("Client: mq_open (server)");
         exit (1);
+    }
+    else
+    {
+       printf ("cannot open server ");
     }
 
     char in_buffer [MSG_BUFFER_SIZE];
